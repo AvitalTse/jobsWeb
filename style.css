@@ -1,0 +1,174 @@
+/* navbar bootstrap */
+
+.navbar .dropdown-toggle, .navbar .dropdown-menu a {
+    cursor: pointer;
+}
+
+.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #edf0f3;
+}
+
+
+
+
+/*All jobs page*/
+#loading {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff ;
+    z-index: 9999;
+    }
+  
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+ }
+  
+ .card {
+     flex: 0 1 30%;
+     margin: 5px;
+     height: 620px;
+     
+ }
+
+#img_card{
+    
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+
+#title{
+    font-weight: bolder;
+    text-decoration-line:underline ;
+}
+
+
+.details{
+
+    text-align: left;
+    margin: 10px;
+    overflow: scroll;
+
+}
+
+.buttons{
+    text-align: center;
+   
+
+    
+}
+
+#see{
+    background-color:#006400;
+    border-radius: 2px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #f9fbf8;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 10px;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  #see:hover
+  {
+    background-color: #82f088;
+  }
+  
+
+
+
+.save {
+  background-color: #fdbebd;
+  border-radius: 2px;
+  border-style: none;
+  box-sizing: border-box;
+  color:black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 10px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.save:hover {
+  background-color: #f05656;
+}
+
+
+.company{
+    background : #F0F0F0;
+    text-align: center;
+    padding: 5px;
+}
+
+.type{
+    background : #F0F0F0;
+    text-align: left;
+    padding: 5px;
+}
+
+
+
+@media (max-width: 767px) {
+    .navbar .dropdown-toggle:not(.nav-link)::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .5em;
+        vertical-align: 0;
+        border-bottom: .3em solid transparent;
+        border-top: .3em solid transparent;
+        border-left: .3em solid;
+    }
+
+  .box{
+    display: block;
+
+  }
+  .card{
+    flex: none;
+  }
+}

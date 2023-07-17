@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="source.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="navbar navbar-expand-md navbar-dark bg-primary mb-4" role="navigation">
+        <a class="navbar-brand" href="#">Full Stack</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" onclick="getPageContent('home')">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="allJobs" href="#" onclick="getAllJobs()" >All jobs</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catagories</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Software Development')"><a>Software Development</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Customer Service')" ><a>Customer Service</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Design')"><a>Design</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Marketing')"><a>Marketing</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Sales')"><a>Sales</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Product')"><a>Product</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Business')"><a>Business</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Data')"><a>Data</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('DevOps / Sysadmin')"><a>DevOps/Sysadmin</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Finance / Legal')"><a>Finance/Legal</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Human Resources')"><a>Human Resources</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('QA')"><a>QA</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('Writing')"><a>Writing</a></li>
+                        <li class="dropdown-item" href="#" onclick="getJobByC('All others')"><a>All others</a></li>
+                        <li class="dropdown-item dropdown">
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="savedJobs()" >Saved jobs &#128151</a>
+                </li>
+
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="s_input">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit" onclick="FreeSearchJobs()">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <main role="main" class="container">
+      
+    </main>
+</body>
+</html>
